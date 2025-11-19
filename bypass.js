@@ -8,32 +8,32 @@
         const host = location.hostname;
         const defaultTime = 8;
         const normalTime = 60;
-        const ver = "4.0.6.0";
+        const ver = "3.0.3.0";
         const debug = true;
 
         // ---------- language & translations ----------
-        let currentLanguage = localStorage.getItem('lang') || 'id';
+        let currentLanguage = localStorage.getItem('lang') || 'vi';
         const translations = {
-            id: {
+            vi: {
                 title: "₮okisaki♡ Bypass",
-				pleaseSolveCaptcha: "Tolong selesaikan CAPTCHA untuk lanjut",
-				captchaSuccess: "CAPTCHA berhasil diselesaikan",
-				redirectingToWork: "Ngarahin ke Work.ink...",
-				redirectingToWorkCountdown: "Ngarahin ke Work.ink...",
-				bypassSuccessCopy: "Bypass berhasil! Key udah dicopy (klik 'Izinkan' kalo diminta)",
-				waitingCaptcha: "Nunggu CAPTCHA...",
-				pleaseReload: "Tolong reload halaman...(workink error)",
-				reloading: "selesai spoofing reload...",
-				socialsdetected: "media sosial ketemu, mulai spoof...",
-				bypassSuccess: "Bypass berhasil",
-				backToCheckpoint: "Balik ke checkpoint...",
-				captchaSuccessBypassing: "CAPTCHA berhasil, lagi bypass...",
-				version: "Versi 4.0.6.0",
-				madeBy: "Dibuat sama ₮okisaki♡ (dasar dari IHaxU)",
-				autoRedirect: "Auto-redirect"
+                pleaseSolveCaptcha: "Tolong selesaikan CAPTCHA untuk lanjut",
+                captchaSuccess: "CAPTCHA berhasil diselesaikan",
+                redirectingToWork: "Ngarahin ke Work.ink...",
+                redirectingToWorkCountdown: "Ngarahin ke Work.ink dalam {detik} detik...",
+                bypassSuccessCopy: "Bypass berhasil! Key udah dicopy (klik 'Izinkan' kalo diminta)",
+                waitingCaptcha: "Nunggu CAPTCHA...",
+                pleaseReload: "Tolong reload halaman...(workink error)",
+                reloading: "selesai spoofing reload...",
+                socialsdetected: "jaringan sosial ditemukan, mulai spoof...",
+                bypassSuccess: "Bypass berhasil",
+                backToCheckpoint: "Balik ke checkpoint...",
+                captchaSuccessBypassing: "CAPTCHA berhasil, lagi bypass...",
+                version: "Versi 3.0.3.0",
+                madeBy: "Dibuat sama ₮okisaki♡ (dasar dari IHaxU)",
+                autoRedirect: "Otomatis-redirect"
             },
             en: {
-                title: "₮okisaki♡",
+                title: "₮okisaki♡ Bypass",
                 pleaseSolveCaptcha: "Please solve the CAPTCHA to continue",
                 captchaSuccess: "CAPTCHA solved successfully",
                 redirectingToWork: "Redirecting to Work.ink...",
@@ -48,7 +48,7 @@
                 bypassSuccess: "Bypass successful",
                 backToCheckpoint: "Returning to checkpoint...",
                 captchaSuccessBypassing: "CAPTCHA solved successfully, bypassing...",
-                version: "Version 4.0.6.0",
+                version: "Version 3.0.3.0",
                 madeBy: "Made by ₮okisaki♡ (based on IHaxU)",
                 autoRedirect: "Auto-redirect"
             }
@@ -645,7 +645,7 @@ input:checked + .toggle-slider:before {
     <div class="panel-body" id="panel-body">
       <div class="language-section">
         <div class="lang-toggle">
-          <button class="lang-btn ${currentLanguage === 'id' ? 'active' : ''}" data-lang="id">Indonesia</button>
+          <button class="lang-btn ${currentLanguage === 'vi' ? 'active' : ''}" data-lang="vi">INDONESIA</button>
           <button class="lang-btn ${currentLanguage === 'en' ? 'active' : ''}" data-lang="en">English</button>
         </div>
       </div>
@@ -1549,5 +1549,3 @@ async function spoofSocials() {
 }
 
 })();
-})();
-
