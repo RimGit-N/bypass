@@ -16,21 +16,21 @@
         const translations = {
             id: {
                 title: "₮okisaki♡ Bypass",
-		pleaseSolveCaptcha: "Tolong selesaikan CAPTCHA untuk lanjut",
-		captchaSuccess: "CAPTCHA berhasil diselesaikan",
-		redirectingToWork: "Ngarahin ke Work.ink...",
-		redirectingToWorkCountdown: "Ngarahin ke Work.ink...",
-		bypassSuccessCopy: "Bypass berhasil! Key udah dicopy (klik 'Izinkan' kalo diminta)",
-		waitingCaptcha: "Nunggu CAPTCHA...",
-		pleaseReload: "Tolong reload halaman...(workink error)",
-		reloading: "selesai spoofing reload...",
-		socialsdetected: "media sosial ketemu, mulai spoof...",
-		bypassSuccess: "Bypass berhasil",
-		backToCheckpoint: "Balik ke checkpoint...",
-		captchaSuccessBypassing: "CAPTCHA berhasil, lagi bypass...",
-		version: "Versi 4.0.6.0",
-		madeBy: "Dibuat sama ₮okisaki♡ (dasar dari IHaxU)",
-		autoRedirect: "Auto-redirect"
+				pleaseSolveCaptcha: "Tolong selesaikan CAPTCHA untuk lanjut",
+				captchaSuccess: "CAPTCHA berhasil diselesaikan",
+				redirectingToWork: "Ngarahin ke Work.ink...",
+				redirectingToWorkCountdown: "Ngarahin ke Work.ink...",
+				bypassSuccessCopy: "Bypass berhasil! Key udah dicopy (klik 'Izinkan' kalo diminta)",
+				waitingCaptcha: "Nunggu CAPTCHA...",
+				pleaseReload: "Tolong reload halaman...(workink error)",
+				reloading: "selesai spoofing reload...",
+				socialsdetected: "media sosial ketemu, mulai spoof...",
+				bypassSuccess: "Bypass berhasil",
+				backToCheckpoint: "Balik ke checkpoint...",
+				captchaSuccessBypassing: "CAPTCHA berhasil, lagi bypass...",
+				version: "Versi 4.0.6.0",
+				madeBy: "Dibuat sama ₮okisaki♡ (dasar dari IHaxU)",
+				autoRedirect: "Auto-redirect"
             },
             en: {
                 title: "₮okisaki♡",
@@ -645,7 +645,7 @@ input:checked + .toggle-slider:before {
     <div class="panel-body" id="panel-body">
       <div class="language-section">
         <div class="lang-toggle">
-          <button class="lang-btn ${currentLanguage === 'id' ? 'active' : ''}" data-lang="vi">Indonesia</button>
+          <button class="lang-btn ${currentLanguage === 'id' ? 'active' : ''}" data-lang="id">Indonesia</button>
           <button class="lang-btn ${currentLanguage === 'en' ? 'active' : ''}" data-lang="en">English</button>
         </div>
       </div>
@@ -1550,3 +1550,4 @@ async function spoofSocials() {
 
 })();
 })();
+
