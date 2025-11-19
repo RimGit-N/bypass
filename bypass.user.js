@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Workink and Volcano bypass
 // @namespace    http://tampermonkey.net/
-// @version      3.0.3.0
+// @version      4.0.6.0
 // @description  bypasss workink and volcano key system
-// @author       Dyrian and elfuhh
+// @author       ₮okisaki♡
 // @match        https://key.volcano.wtf/*
 // @match        https://work.ink/*
 // @run-at       document-start
@@ -14,4 +14,5 @@
 // @require https://github.com/RimGit-N/bypass-workink/raw/refs/heads/main/bypass.js
 
 // ==/UserScript==
+
 
