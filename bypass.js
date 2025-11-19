@@ -8,32 +8,32 @@
         const host = location.hostname;
         const defaultTime = 8;
         const normalTime = 60;
-        const ver = "3.0.3.0";
+        const ver = "4.0.6.0";
         const debug = true;
 
         // ---------- language & translations ----------
-        let currentLanguage = localStorage.getItem('lang') || 'vi';
+        let currentLanguage = localStorage.getItem('lang') || 'id';
         const translations = {
-            vi: {
-                title: "Dyrian and elfuhh Bypass",
-                pleaseSolveCaptcha: "Vui lòng giải CAPTCHA để tiếp tục",
-                captchaSuccess: "CAPTCHA đã thành công",
-                redirectingToWork: "Đang qua Work.ink...",
-                redirectingToWorkCountdown: "Đang chuyển hướng tới Work.ink trong {seconds} giây...",
-                bypassSuccessCopy: "Bypass thành công, đã Copy Key (bấm 'Cho Phép' nếu có)",
-                waitingCaptcha: "Đang chờ CAPTCHA...",
-                pleaseReload: "Vui lòng tải lại trang...(workink lỗi)",
-                reloading: "đã giả mạo tải lại...",
-                socialsdetected: "các mạng xã hội được phát hiện bắt đầu giả mạo...",
-                bypassSuccess: "Bypass thành công",
-                backToCheckpoint: "Đang về lại Checkpoint...",
-                captchaSuccessBypassing: "CAPTCHA đã thành công, đang bypass...",
-                version: "Phiên bản 3.0.3.0",
-                madeBy: "Được tạo bởi DyRian và elfuhh (dựa trên IHaxU)",
-                autoRedirect: "Tự động chuyển hướng"
+            id: {
+                title: "₮okisaki♡ Bypass",
+		pleaseSolveCaptcha: "Tolong selesaikan CAPTCHA untuk lanjut",
+		captchaSuccess: "CAPTCHA berhasil diselesaikan",
+		redirectingToWork: "Ngarahin ke Work.ink...",
+		redirectingToWorkCountdown: "Ngarahin ke Work.ink...",
+		bypassSuccessCopy: "Bypass berhasil! Key udah dicopy (klik 'Izinkan' kalo diminta)",
+		waitingCaptcha: "Nunggu CAPTCHA...",
+		pleaseReload: "Tolong reload halaman...(workink error)",
+		reloading: "selesai spoofing reload...",
+		socialsdetected: "media sosial ketemu, mulai spoof...",
+		bypassSuccess: "Bypass berhasil",
+		backToCheckpoint: "Balik ke checkpoint...",
+		captchaSuccessBypassing: "CAPTCHA berhasil, lagi bypass...",
+		version: "Versi 4.0.6.0",
+		madeBy: "Dibuat sama ₮okisaki♡ (dasar dari IHaxU)",
+		autoRedirect: "Auto-redirect"
             },
             en: {
-                title: "Dyrian and elfuhh Bypass",
+                title: "₮okisaki♡",
                 pleaseSolveCaptcha: "Please solve the CAPTCHA to continue",
                 captchaSuccess: "CAPTCHA solved successfully",
                 redirectingToWork: "Redirecting to Work.ink...",
@@ -48,8 +48,8 @@
                 bypassSuccess: "Bypass successful",
                 backToCheckpoint: "Returning to checkpoint...",
                 captchaSuccessBypassing: "CAPTCHA solved successfully, bypassing...",
-                version: "Version 3.0.3.0",
-                madeBy: "Made by DyRian and elfuhh (based on IHaxU)",
+                version: "Version 4.0.6.0",
+                madeBy: "Made by ₮okisaki♡ (based on IHaxU)",
                 autoRedirect: "Auto-redirect"
             }
         };
@@ -611,7 +611,7 @@ input:checked + .toggle-slider:before {
 <div class="panel-container">
   <div class="panel">
     <div class="header">
-      <div class="title">WORKINK BYPASS</div>
+      <div class="title">₮okisaki♡ BYPASS</div>
       <button class="minimize-btn" id="minimize-btn">−</button>
     </div>
 
@@ -645,7 +645,7 @@ input:checked + .toggle-slider:before {
     <div class="panel-body" id="panel-body">
       <div class="language-section">
         <div class="lang-toggle">
-          <button class="lang-btn ${currentLanguage === 'vi' ? 'active' : ''}" data-lang="vi">Tiếng Việt</button>
+          <button class="lang-btn ${currentLanguage === 'id' ? 'active' : ''}" data-lang="vi">Indonesia</button>
           <button class="lang-btn ${currentLanguage === 'en' ? 'active' : ''}" data-lang="en">English</button>
         </div>
       </div>
@@ -1548,4 +1548,5 @@ async function spoofSocials() {
     });
 }
 
+})();
 })();
